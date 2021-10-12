@@ -1,0 +1,8 @@
+monitor:
+  job:
+    jobs:
+      - name: moinitorDB
+        cron: "0 */30 * * * ?"
+#        cron: "*/30 * * * * ?"
+        description: 获取Oracle数据库表空间信息
+        dataRESTfulUrl: http://127.0.0.1:8012/mbs-hiIntf/api/Kibana/monitor/db/oracle/tablespace

@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: log,es,monitorjob,dev
+  application:
+    name: system-monitor
+  main:
+    allow-bean-definition-overriding: true
+  output:
+    ansi:
+      enabled: always
+  session:
+    store-type: redis
+server:
+  port: 8082
+  servlet:
+    session:
+      timeout: 7200s
+    context-path: /system-monitor
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
