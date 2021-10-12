@@ -27,7 +27,6 @@ public class EsEntity<T> {
      */
     public EsEntity(T data) {
         this.data = data;
-        this.id = id;
         this.date = new Date();
     }
     

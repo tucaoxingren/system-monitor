@@ -17,8 +17,8 @@ public class MonitorDataVO implements Serializable {
     
     private static final long serialVersionUID = 9122665969103336326L;
     
-    public final static int CODE_SUCCESS = 0;
-    public final static int CODE_FAIL = -1;
+    public static final int CODE_SUCCESS = 0;
+    public static final int CODE_FAIL = -1;
     
     /**
      * 成功标记

@@ -25,7 +25,7 @@ public class ESLogUtil {
     //初始化
     @PostConstruct
     public void init() {
-        esLogServiceUtil = this.esLogService;
+        ESLogUtil.esLogServiceUtil = this.esLogService;
     }
     
     public static  <T> void saveAsync(String index, EsEntity<T> esEntity) {

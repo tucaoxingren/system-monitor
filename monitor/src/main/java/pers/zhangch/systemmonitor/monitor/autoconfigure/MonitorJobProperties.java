@@ -14,7 +14,7 @@ import java.util.List;
 @ConfigurationProperties(prefix = "monitor.job")
 public class MonitorJobProperties {
     
-    public static List<MonitorJobVO> jobs;
+    protected static List<MonitorJobVO> jobs;
     
     public static List<MonitorJobVO> getJobs() {
         return jobs;

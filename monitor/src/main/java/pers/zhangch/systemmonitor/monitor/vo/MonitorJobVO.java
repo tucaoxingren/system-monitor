@@ -42,7 +42,7 @@ public class MonitorJobVO {
     /**
      * 监控数据来源
      */
-    private DataPullTypeEnum dataPullType = DataPullTypeEnum.RESTful;
+    private DataPullTypeEnum dataPullType = DataPullTypeEnum.REST_FUL;
     /**
      * 监控数据来源为RESTful时 数据获取地址
      */
@@ -76,7 +76,7 @@ public class MonitorJobVO {
     public void checks() {
         if (this.enabled) {
             try {
-                if (DataPullTypeEnum.RESTful.equals(this.dataPullType)) {
+                if (DataPullTypeEnum.REST_FUL.equals(this.dataPullType)) {
                     if (Validator.isEmpty(this.dataRESTfulUrl)) {
                         throw new ValidateException("数据来源类型为{}时 dataRESTfulUrl 不能为空", this.dataPullType.getDataPullType());
                     }

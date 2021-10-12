@@ -41,7 +41,7 @@ public class DefaultParentTask implements Task {
                 DateUtil.now()));
         List<String> monitorDataList = new ArrayList<>();
         try {
-            if (DataPullTypeEnum.RESTful.equals(monitorJobVO.getDataPullType())) {
+            if (DataPullTypeEnum.REST_FUL.equals(monitorJobVO.getDataPullType())) {
                 String result = HttpUtil.get(monitorJobVO.getDataRESTfulUrl());
                 MonitorDataVO monitorDataVO = JSONUtil.toBean(result, MonitorDataVO.class);
                 if (monitorDataVO.isSuccess()) {

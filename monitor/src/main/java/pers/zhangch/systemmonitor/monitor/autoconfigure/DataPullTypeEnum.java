@@ -13,9 +13,9 @@ public enum DataPullTypeEnum {
     /**
      * 数据来源类型 RESTful接口
      */
-    RESTful("RESTful"),
+    REST_FUL("RESTful"),
     /**
-     * 数据来源类型 数据库
+     * 数据来源类型 REST_FUL数据库
      */
     DB("db");
     
